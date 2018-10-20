@@ -48,12 +48,12 @@ class Background extends Component {
 
     setInterval( () => {
       createFirework(23,200,6,3,null,null,null,null,false,true);
-    } , 1000);
+    } , 3000);
     
 
     setInterval( () => {
       createFirework(39,78,5,4,null,null,null,null,false,true);
-    } , 800);
+    } , 2000);
 
   }
 
