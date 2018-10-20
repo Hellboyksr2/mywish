@@ -34,7 +34,7 @@ const styles = {
     backgroundSize: '120px',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: '0px 0px, 100% 0px, 0px 100%, 100% 100%',
-    padding: '30px',
+    padding: '15px',
     lineHeight: '1.5',
     border: '8px double #997A4F',
     margin: '10px',
