@@ -1,26 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
+import Background from './Background/Background';
+import Text from './Text/Text';
+
 import './App.css';
 
 class App extends Component {
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+        <Background> 
+          <Text> 
+            May millions of lamp illuminate your life with endless joy,
+            Prosperty, Health and Wealth forever. Wishinging you and your 
+            family members advance Happy Diwali!!!
+          </Text>
+        </Background>
     );
   }
 }
