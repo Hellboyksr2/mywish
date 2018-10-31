@@ -9,7 +9,6 @@ import BottomLeft from '../Assets/Images/bottom-left.png'
 import BottomRight from '../Assets/Images/bottom-right.png'
 
 
-
 const styles = {
   background : {
     backgroundColor : "#222222",
@@ -46,21 +45,35 @@ class Background extends Component {
 
   componentDidMount() {
 
-    setInterval( () => {
+    this.firstFirework = setInterval( () => {
       createFirework(23,200,6,3,null,null,null,null,false,true);
     } , 3000);
     
 
-    setInterval( () => {
+    this.secondFirework = setInterval( () => {
       createFirework(39,78,5,4,null,null,null,null,false,true);
     } , 2000);
 
   }
 
+  componentWillUnmount() {
+    clearInterval(this.firstFirework);
+    clearInterval(this.secondFirework);
+  }
+
   render() {
+
+    const modifiedConfig = { ...particalsConfig };
+
+    if( this.props.showHearts === "true") {
+      modifiedConfig.particles.shape.type = "image";
+      modifiedConfig.particles.size.value  = 30;
+      modifiedConfig.particles.number.value  = 10;
+    }
+
     return (
       <div>
-        <Particles params={ particalsConfig } style={styles.background } />
+        <Particles params={ modifiedConfig } style={styles.background } />
 
         <div style ={ { position : 'relative' , color : '#FFFFFF'}}>
           <div id="fireworks-template">

@@ -20,7 +20,7 @@ export default {
         "nb_sides": 5
       },
       "image": {
-        "src": "img/github.svg",
+        "src": "images/heart.png",
         "width": 100,
         "height": 100
       }

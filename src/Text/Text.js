@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 
 const styles = {
   text : {
-    fontSize : '28px',
+    fontSize : '24px',
     textAlign : 'center',
     fontFamily: "textStyle"
   },
   from : {
     textAlign: 'right',
     color: '#abf5ff',
+    textTransform : 'capitalize',
     paddingTop: '30px',
     paddingRight: '5px',
     fontSize: '20px',
@@ -54,7 +55,7 @@ class Text extends Component {
         </div>
         <div style={ styles.from } className={ this.state.textClassName }>
           <div>Best Regards,</div>
-          <div>Test UserName.</div>
+          <div>{ this.props.name }</div>
         </div>
       </section>
     )
