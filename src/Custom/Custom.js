@@ -62,7 +62,8 @@ class Custom extends Component {
     const { classes } = this.props;
 
     const webURL = 
-     encodeURI(`https://awesome-mayer-1ac5ec.netlify.com/#/?fromp=${this.state.from}%26showHearts=${this.state.showHearts}`);
+     `https://awesome-mayer-1ac5ec.netlify.com/%23/?fromp=${
+       this.state.from.replace( / /g , '%20')}%26showHearts=${this.state.showHearts}`;
 
     return (
       <Grid container className={classes.root} spacing={16}>
