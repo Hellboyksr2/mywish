@@ -25,7 +25,7 @@ class Home extends Component {
 
     return (
         <Background showHearts={ params.get("showHearts")}> 
-          <Text name={params.get("name")}> 
+          <Text name={params.get("fromp")}> 
             May millions of lamp illuminate your life with endless joy,
             Prosperty, Health and Wealth forever. Wishinging you and your 
             family members advance Happy Diwali!!!
