@@ -63,7 +63,7 @@ class Custom extends Component {
 
     const webURL = 
      `https://awesome-mayer-1ac5ec.netlify.com/%23/?fromp=${
-       this.state.from.replace( / /g , '%20')}%26showHearts=${this.state.showHearts}`;
+     this.state.from.replace( / /g , '_')}%26showHearts=${this.state.showHearts}`;
 
     return (
       <Grid container className={classes.root} spacing={16}>
